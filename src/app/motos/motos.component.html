@@ -1,0 +1,432 @@
+<!--! Boostrap -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- !Icons -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet"
+/>
+<!--* Titles -->
+<h1 class="title-1">Catálogo</h1>
+<h1 class="title-2">
+  ¡Revisa nuestro catálogo de las motos y accesorios que ofrecemos!
+</h1>
+<!--* Store -->
+<section class="section-products">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="header">
+          <h3>Motocicletas</h3>
+          <h2>Todos los modelos</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-1" class="single-product">
+          <div class="part-1">
+            <span class="discount">10% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(39.99, 20.0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO DSR</h3>
+            <h4 class="product-old-price">$9940.00</h4>
+            <h4 class="product-price">$8940.00</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-2" class="single-product">
+          <div class="part-1">
+            <span class="discount">15% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(49.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO FX</h3>
+            <h4 class="product-old-price">$5900.00</h4>
+            <h4 class="product-price">$4900.00</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-3" class="single-product">
+          <div class="part-1">
+            <span class="new">new</span>
+            <ul>
+              <li>
+                <a (click)="buy(59.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO SR</h3>
+            <h4 class="product-old-price">$9040.99</h4>
+            <h4 class="product-price">$7040.99</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-4" class="single-product">
+          <div class="part-1">
+            <span class="discount">33% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(19.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO DSR/X</h3>
+            <h4 class="product-old-price">$3999.99</h4>
+            <h4 class="product-price">$1999.99</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-5" class="single-product">
+          <div class="part-1">
+            <span class="new">new</span>
+            <ul>
+              <li>
+                <a (click)="buy(39.99, 20.0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">HONDA CB1000R</h3>
+            <h4 class="product-price">$6699.00</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-6" class="single-product">
+          <div class="part-1">
+            <ul>
+              <li>
+                <a (click)="buy(49.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">HONDA CBR500R ABS</h3>
+            <h4 class="product-price">$1299.99</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-7" class="single-product">
+          <div class="part-1">
+            <span class="new">new</span>
+            <ul>
+              <li>
+                <a (click)="buy(59.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">HONDA CBR650R</h3>
+            <h4 class="product-price">$7199.00</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-8" class="single-product">
+          <div class="part-1">
+            <ul>
+              <li>
+                <a (click)="buy(19.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">HONDA CBR300R</h3>
+            <h4 class="product-price">$4899.00</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--* Store -->
+<section class="section-products">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="header">
+          <h3>Accesorios</h3>
+          <h2>Accesorios de Temporada</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-9" class="single-product">
+          <div class="part-1">
+            <ul>
+              <li>
+                <a (click)="buy(39.99, 20.0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">Shad Top Case Rack</h3>
+            <h4 class="product-price">$305.99</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-10" class="single-product">
+          <div class="part-1">
+            <span class="discount">10% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(49.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">Sedici Dry Bag Accessory Pack</h3>
+            <h4 class="product-old-price">$79.99</h4>
+            <h4 class="product-price">$69.99</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-11" class="single-product">
+          <div class="part-1">
+            <ul>
+              <li>
+                <a (click)="buy(59.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">Cardo PackTalk Slim JBL Headset</h3>
+            <h4 class="product-price">$288.95</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-12" class="single-product">
+          <div class="part-1">
+            <ul>
+              <li>
+                <a (click)="buy(19.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">Cardo Spirit Headset</h3>
+            <h4 class="product-price">$170.96</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--* MODAL -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1>Llene los siguientes datos para finalizar la compra</h1>
+      <span class="close" style="float: right" (click)="closeModal()"
+        >&times;</span
+      >
+    </div>
+    <div class="modal-body">
+      <div class="container-100">
+        <h1 class="title-2">
+            ¡Tienes un descuento del 15%!
+          </h1>
+        <div class="row">
+          <div class="col-25">
+            <label>Nombre Completo</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="modal_txt_1"
+              placeholder="Ingrese su nombre completo..."
+            />
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label>Carnet de Identidad</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="number"
+                id="modal_txt_ci"
+                placeholder="Ingrese su número de CI..."
+              />
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Tarjeta de Crédito</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="number"
+              id="modal_txt_2"
+              placeholder="Ingrese el número de tarjeta de crédito..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Vencimiento</label>
+          </div>
+          <div class="col-75">
+            <input type="month" id="modal_txt_3" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">CSC</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="number"
+              id="modal_txt_4"
+              placeholder="Ingrese el CSC..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <input
+        type="submit"
+        class="btn-home"
+        (click)="btnStore()"
+        value="Enviar"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,303 @@
+<!--! Boostrap -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- !Icons -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet"
+/>
+<!--* Titles -->
+<h1 class="title-1">UCB Rider</h1>
+<h1 class="title-2">¡Bienvenido a la mejor tienda de motocicletas del país!</h1>
+<!--* Cards -->
+<p class="text-1-centered">
+  En nuestra tienda encontrarás los siguientes tipos de motocicletas:
+</p>
+<div class="container" style="padding-top: 40px">
+  <div class="row">
+    <div class="col">
+      <!--? Card 1 -->
+      <div class="card" style="width: 100%">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2466/2466926.png"
+          class="card-img-top"
+          style="padding: 40px"
+        />
+        <div class="card-body">
+          <h1 class="card-title">Scooters</h1>
+          <p class="card-text">
+            Es uno de los tipos de motos más ideales para la ciudad. Son motos
+            ligeras, diseñadas para tener una experiencia de manejo cómoda y
+            sencilla y cuentan con transmisión automática.
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <a
+                  href="https://www.moto1pro.com/reportajes-motos/11-ventajas-de-los-scooters-en-la-ciudad"
+                  class="btn btn-dark center"
+                  style="color: white"
+                  >Más información</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <!--? Card 2 -->
+      <div class="card" style="width: 100%">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3701/3701887.png"
+          class="card-img-top"
+          style="padding: 40px"
+        />
+        <div class="card-body">
+          <h1 class="card-title">Cross</h1>
+          <p class="card-text">
+            Son para competición en motocross. Existen de dos y cuatro tiempos.
+            Las de dos tiempos son más baratas y más fáciles de mantener. Las de
+            cuatro tiempos van mejor y son más fáciles de pilotar.
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <a
+                  href="https://www.mundodelmotor.net/tipos-de-motos-de-cross/"
+                  class="btn btn-dark center"
+                  style="color: white"
+                  >Más información</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <!--? Card 3 -->
+      <div class="card" style="width: 100%">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2073/2073233.png"
+          class="card-img-top"
+          style="padding: 40px"
+        />
+        <div class="card-body">
+          <h1 class="card-title">Enduro</h1>
+          <p class="card-text">
+            Las motos enduro son versiones homologadas de las motos cross para
+            circular en ciudad y carretera, además de circuitos off road.
+            Permiten combinar los beneficios de la moto de cross para diversos
+            usos.
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <a
+                  href="https://hmong.es/wiki/Enduro_motorcycle"
+                  class="btn btn-dark center"
+                  style="color: white"
+                  >Más información</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--* Store -->
+<section class="section-products">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="header">
+          <h3>Ofertas</h3>
+          <h2>Modelos nuevos</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-1" class="single-product">
+          <div class="part-1">
+            <span class="discount">10% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(39.99, 20.0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO DSR</h3>
+            <h4 class="product-old-price">$9940.00</h4>
+            <h4 class="product-price">$8940.00</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-2" class="single-product">
+          <div class="part-1">
+            <span class="discount">15% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(49.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO FX</h3>
+            <h4 class="product-old-price">$5900.00</h4>
+            <h4 class="product-price">$4900.00</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-3" class="single-product">
+          <div class="part-1">
+            <span class="new">new</span>
+            <ul>
+              <li>
+                <a (click)="buy(59.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO SR</h3>
+            <h4 class="product-old-price">$9040.99</h4>
+            <h4 class="product-price">$7040.99</h4>
+          </div>
+        </div>
+      </div>
+      <!--? Single Product -->
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="product-4" class="single-product">
+          <div class="part-1">
+            <span class="discount">33% off</span>
+            <ul>
+              <li>
+                <a (click)="buy(19.99, 0)"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a (click)="addFavorite()"><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a (click)="addList()"><i class="fas fa-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">ZERO DSR/X</h3>
+            <h4 class="product-old-price">$3999.99</h4>
+            <h4 class="product-price">$1999.99</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--* MODAL -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>
+                Llene los siguientes datos para finalizar la compra
+            </h1>
+            <span class="close" style="float: right;" (click)="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+                <div class="container-100">
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Nombre Completo</label>
+                        </div>
+                        <div class="col-75">
+                            <input
+                                type="text"
+                                id="modal_txt_1"
+                                placeholder="Ingrese su nombre completo..."
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Tarjeta de Crédito</label>
+                        </div>
+                        <div class="col-75">
+                            <input
+                                type="number"
+                                id="modal_txt_2"
+                                placeholder="Ingrese el número de tarjeta de crédito..."
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Vencimiento</label>
+                        </div>
+                        <div class="col-75">
+                            <input
+                                type="month"
+                                id="modal_txt_3"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">CSC</label>
+                        </div>
+                        <div class="col-75">
+                            <input
+                                type="number"
+                                id="modal_txt_4"
+                                placeholder="Ingrese el CSC..."
+                            />
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="modal-footer">
+            <input
+                type="submit"
+                class="btn-home"
+                (click)="btnStore()"
+                value="Enviar"
+            />
+        </div>
+    </div>
+</div>
